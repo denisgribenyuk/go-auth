@@ -1,0 +1,22 @@
+---
+server:
+  port: "8080"
+
+db:
+  maxOpenConnections: 5
+  maxIdleConnections: 5
+
+session:
+  accessTTL: 3600 # secs
+  refreshTTL: 864000 # secs
+  tokenLength: 80 # symbols
+
+s3:
+  photos_folder: "user_images/"
+
+notification:
+  signUpNotificationTitleId: 3017
+  signUpNotificationMessageId: 3018
+  resetPasswordNotificationTileId: 3019
+  resetPasswordMessageTileId: 3020
+  tokenLength: 255

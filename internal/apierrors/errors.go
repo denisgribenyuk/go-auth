@@ -1,0 +1,30 @@
+package apierrors
+
+const (
+	ErrBase64FormatError        = "Error in base64.'"
+	ErrCompanyNotFound          = "Company not found."
+	ErrExtraArgsNotAllowed      = "Extra args not allowed."
+	ErrExternalUserIDExists     = "User with this external ID already exists."
+	ErrInvalidCompanyID         = "Invalid company id."
+	ErrInvalidUserID            = "Invalid user id."
+	ErrInternalServerError      = "Internal server error."
+	ErrForbidden                = "Invalid user."
+	ErrNoCompany                = "Company does not exist"
+	ErrManagerNotFound          = "Manager with this ID is not found in this company."
+	ErrPositionsConflict        = "Position already exists."
+	ErrPositionNotFound         = "Position with this ID is not found in this company."
+	ErrPositionNotInCompany     = "Position not in the company."
+	ErrPhoneAlreadyExists       = "Phone number already exists"
+	ErrRoleNotFound             = "Role with this id not found"
+	ErrUnauthorized             = "The session does not exist or has expired."
+	ErrURLNotFound              = "Requested URL was not found on this server."
+	ErrUserEmailPhoneExists     = "User with this email or phone already exists"
+	ErrUserHasNoAccessToCompany = "User doesn't have access to this company."
+	ErrUserImageNotFound        = "Image for user not found."
+	ErrUserNotActive            = "User is not active."
+	ErrUserNotExists            = "User does not exist"
+	ErrUserNotInCompany         = "User not in company."
+	ErrUserSetRoleForbidden     = "User doesn't have permissions for updating a user with this roles."
+
+	ErrNoAPIKEY = "API key not found"
+)
